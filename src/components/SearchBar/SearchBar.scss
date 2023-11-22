@@ -1,0 +1,31 @@
+.search-bar{
+    height: 2rem;
+    width: 85%;
+    background: white;
+    position: relative;
+    top: -6rem;
+    left: 1rem;
+    padding: 0.5rem;
+
+    &__dates {
+        font-size: 12px;
+        text-decoration: underline;
+
+        &-join {
+            text-decoration: none;
+        }
+    }
+
+    &__button {
+        margin-left: 0.5rem;
+    }
+}
+
+.drop-btn {
+    width: 10px;
+}
+
+.react-calendar {
+    position: relative;
+    z-index: 1;
+}

@@ -1,0 +1,50 @@
+[
+    {
+        "current_city": "Vancouver",
+        "city": "Barcelona",
+        "time": "10:00am-4:50pm",
+        "airline": "Air Canada",
+        "price": "$850",
+        "iata": "BCN"
+    },
+    {
+        "current_city": "Vancouver",
+        "city": "Barcelona",
+        "time": "12:00pm-8:10pm",
+        "airline": "West Jet",
+        "price": "$930",
+        "iata": "BCN"
+    },
+    {
+        "current_city": "Vancouver",
+        "city": "Barcelona",
+        "time": "1:30pm-9:45pm",
+        "airline": "Swoop",
+        "price": "$825",
+        "iata": "BCN"
+    },
+    {
+        "current_city": "Vancouver",
+        "city": "London",
+        "time": "10:00am-4:50pm",
+        "airline": "Air Canada",
+        "price": "$1245",
+        "iata": "LON"
+    },
+    {
+        "current_city": "Vancouver",
+        "city": "London",
+        "time": "12:00pm-8:10pm",
+        "airline": "West Jet",
+        "price": "$1300",
+        "iata": "LON"
+    },
+    {
+        "current_city": "Vancouver",
+        "city": "London",
+        "time": "1:30pm-9:45pm",
+        "airline": "Swoop",
+        "price": "$1190",
+        "iata": "LON"
+    }
+]

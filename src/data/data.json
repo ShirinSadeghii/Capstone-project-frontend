@@ -1,0 +1,37 @@
+[
+    {
+        "iata": "BCN",
+        "city": "Barcelona",
+        "country": "Spain"
+    },
+    {
+        "iata": "LON",
+        "city": "London",
+        "country": "UK"
+    },
+    {
+        "iata": "TYO",
+        "city": "Tokyo",
+        "country": "Japan"
+    },
+    {
+        "iata": "MEL",
+        "city": "Melbourne",
+        "country": "Australia"
+    },
+    {
+        "iata": "PAR",
+        "city": "Paris",
+        "country": "France"
+    },
+    {
+        "iata": "LAX",
+        "city": "Los Angeles",
+        "country": "USA"
+    },
+    {
+        "iata": "NYC",
+        "city": "New York",
+        "country": "USA"
+    }
+]

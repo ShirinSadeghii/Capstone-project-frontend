@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block-end: 2rem;
+    margin-block-start: 1rem;
+
+    &__card {
+        display: inline-block;
+        width: 10rem;
+        height: 9rem;
+        margin: 0.5rem;
+        border-radius: 0.312rem;
+        border: 0.062rem solid rgba(0, 0, 0, 0.20);
+        box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.20);
+        position: relative;
+    }
+}
+
+.card__image {
+    height: 9rem;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    border-radius: 0.312rem;
+    position: relative;
+    display: block;
+}

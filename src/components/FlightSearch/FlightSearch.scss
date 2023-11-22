@@ -1,0 +1,50 @@
+.flight {
+    padding: 1rem .5rem;
+    background-color: #f2f2f2;
+
+    &__title {
+        font-size: 24px;
+    }
+
+    &__container {
+        list-style-type: none;
+        padding-inline-start: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__list {
+        margin-bottom: 2rem;
+        background-color: white;
+        border-radius: .5rem;
+        padding: 1rem 0.5rem;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+
+        &-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+}
+
+.item-subtitle {
+    font-size: 14px;
+}
+.item-button {
+    background-color: white;
+    font-weight: 600;
+}
+
+.search-bar {
+    top: 0rem;
+    left: 0rem;
+    width: 80%;
+    background-color: #f2f2f2;
+    padding: 2rem 2rem 0;
+}

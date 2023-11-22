@@ -1,0 +1,41 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 .5rem;
+    margin-block-start: 1rem;
+
+    &__socials{
+        width: 30%;
+    }
+
+    &__contact {
+        width: 40%;
+
+        &-container {
+            padding-top: 10px;
+            line-height: 16px;
+        }
+    }
+
+    &__icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    &__icon-container {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
+    }
+}
+
+.contact__subtitle {
+    font-size: 12px;
+    display: block;
+}
+
+a {
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+}
