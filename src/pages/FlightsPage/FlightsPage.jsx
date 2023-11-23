@@ -6,9 +6,6 @@ import FlightSearch from "../../components/FlightSearch/FlightSearch";
 
 
 
-
-
-
 function FlightsPage() {
     const {city} = useParams();
 

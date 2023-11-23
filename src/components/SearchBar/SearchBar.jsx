@@ -8,9 +8,9 @@ import { useNavigate } from "react-router-dom";
 import axios from 'axios';
 
 
-function SearchBar() {
+function SearchBar(props) {
 
-
+// const city = props.city;
 const [date, setDate] = useState(new Date());
 const [showCalendar, setShowCalendar] = useState(false);
 const [city, setCity] = useState('');
@@ -18,18 +18,14 @@ const navigate = useNavigate();
 
 
 const baseUrl = process.env.REACT_APP_BASE_URL; 
-// const params = useParams();
-
 
 const handleSubmit = async (event) => {
     event.preventDefault();
     
     try {
-        const response = await axios.get(`${baseUrl}/${city}`, {
-            
-        });
-        console.log("hellooo", response.data)
-        console.log("city:", city)
+        const response = await axios.get(`${baseUrl}/${city}`);
+        // console.log("hellooo", response.data)
+        // console.log("city:", city)
         
         navigate(`/flightsearch/${city}`);
     } catch (err) {

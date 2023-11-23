@@ -1,3 +1,4 @@
+// import { useParams } from "react-router-dom";
 import NavBar from "../../components/NavBar/NavBar";
 import Hero from '../../components/Hero/Hero';
 import SearchBar from "../../components/SearchBar/SearchBar";
@@ -6,8 +7,8 @@ import Footer from "../../components/Footer/Footer";
 
 
 
-
 function HomePage() {
+// const {city} = useParams();
     return (
         <>
             <NavBar />

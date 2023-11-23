@@ -23,7 +23,7 @@
     &__item {
         display: flex;
         justify-content: space-between;
-        height: 80px;
+        height: 100px;
 
         &-container {
             display: flex;
@@ -31,10 +31,24 @@
             justify-content: space-between;
         }
     }
+
+    &__sub-container1 {
+        display: flex;
+        flex-direction: column;
+        height: 45%;
+        justify-content: space-between;
+    }
+    
+    &__sub-container2{
+        display: flex;
+        flex-direction: column;
+        height: 40%;
+        justify-content: space-between;
+    }
 }
 
 .item-subtitle {
-    font-size: 14px;
+    font-size: 13px;
 }
 .item-button {
     background-color: white;
