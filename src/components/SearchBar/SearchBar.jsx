@@ -4,38 +4,44 @@ import 'react-calendar/dist/Calendar.css';
 import DropDown from '../../assets/drop-down.png';
 import { useState } from 'react';
 import { useNavigate } from "react-router-dom";
-import dataJson from '../../data/data.json';
+// import dataJson from '../../data/data.json';
+import axios from 'axios';
 
 
 function SearchBar() {
 
-const [data, setData] = useState(dataJson);
+
 const [date, setDate] = useState(new Date());
 const [showCalendar, setShowCalendar] = useState(false);
-const [city, setCity] = useState("");
+const [city, setCity] = useState('');
 const navigate = useNavigate();
 
 
-const handleSubmit = (event) => {
+const baseUrl = process.env.REACT_APP_BASE_URL; 
+// const params = useParams();
+
+
+const handleSubmit = async (event) => {
     event.preventDefault();
-
-    const response = dataJson.map((flight) => {
-        if (flight.city === city) {
-            console.log(flight)
-        }
-        return flight
-    });
-    navigate("/flightsearch");
+    
+    try {
+        const response = await axios.get(`${baseUrl}/${city}`, {
+            
+        });
+        console.log("hellooo", response.data)
+        console.log("city:", city)
+        
+        navigate(`/flightsearch/${city}`);
+    } catch (err) {
+        console.log(err);
+    }
 };
 
-const handleCityChange = (event) => {
-    setCity(event.target.value);
-};
 
     return (
         <div className='search-bar'>
             <form onSubmit={handleSubmit}>
-                <input type='text' value={city} onChange={handleCityChange} name='city' placeholder='search location'></input>
+                <input type='text' onChange={(e) => setCity(e.target.value)} name='city' placeholder='search location'></input>
                 <button type="button" onClick={() => setShowCalendar(!showCalendar)}>
                     <img className="drop-btn" src={DropDown} alt='drop-down icon' />
                 </button>

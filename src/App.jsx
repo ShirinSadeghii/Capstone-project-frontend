@@ -14,8 +14,8 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/:id" element={<HomePage />} />
-          <Route path='/flightsearch' element={<FlightsPage />} />
-          <Route path='/flightsearch/:id' element={<FlightsPage />} />
+          {/* <Route path='/flightsearch' element={<FlightsPage />} /> */}
+          <Route path='/flightsearch/:city' element={<FlightsPage />} />
         </Routes>
       </BrowserRouter>
  
