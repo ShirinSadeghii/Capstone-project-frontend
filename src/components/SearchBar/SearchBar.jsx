@@ -10,14 +10,12 @@ import axios from 'axios';
 
 function SearchBar(props) {
 
-// const city = props.city;
 const [date, setDate] = useState(new Date());
 const [showCalendar, setShowCalendar] = useState(false);
 const [city, setCity] = useState('');
 const navigate = useNavigate();
-
-
 const baseUrl = process.env.REACT_APP_BASE_URL; 
+const {path} = props;
 
 const handleSubmit = async (event) => {
     event.preventDefault();
@@ -27,7 +25,7 @@ const handleSubmit = async (event) => {
         // console.log("hellooo", response.data)
         // console.log("city:", city)
         
-        navigate(`/flightsearch/${city}`);
+        navigate(`/${path}/${city}`);
     } catch (err) {
         console.log(err);
     }

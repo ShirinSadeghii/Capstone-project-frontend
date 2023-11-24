@@ -1,6 +1,6 @@
-@use "../../styles/partials/colors" as *;
+@use '../../styles/partials/colors' as *;
 
-.flight {
+.hotel {
     padding: 1rem .5rem;
     background-color: $Hero;
 
@@ -14,67 +14,68 @@
         display: flex;
         flex-direction: column;
     }
-
+    
     &__container {
         list-style-type: none;
         padding-inline-start: 0;
         display: flex;
         flex-direction: column;
     }
-
     &__list {
         margin-bottom: 2rem;
         background-color: $White;
         border-radius: .5rem;
         padding: 1rem 0.5rem;
     }
-
     &__item {
-        display: flex;
-        justify-content: space-between;
-        height: 100px;
+        // display: flex;
+        // justify-content: space-between;
+        height: 150px;
 
         &-container {
             display: flex;
-            flex-direction: column;
             justify-content: space-between;
         }
     }
 
-    &__sub-container1 {
-        display: flex;
-        flex-direction: column;
-        height: 45%;
-        justify-content: space-between;
-    }
-    
-    &__sub-container2{
-        display: flex;
-        flex-direction: column;
-        height: 40%;
-        justify-content: space-between;
+    &__images {
+        height: 8rem;
+        width: 10rem;
+        border-radius: 4px;
     }
 
-    &-time {
+    &__rating {
+        width: 4rem;
+    }
+
+    &__sub-container2 {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+    }
+
+    &__price-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__price {
+        padding-left: 6px;
+        padding-bottom: 8px;
         font-weight: 600;
-        line-height: 20px;
-    }
-
-    &-subtitle {
-        font-size: 13px;
-        font-weight: 400;
     }
 }
 
-.item-button {
+.item-subtitle {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding-left: 6px;
+}
+
+.price-button {
+    width: 4rem;
+    margin-left: 6%;
     background-color: $White;
     font-weight: 600;
-}
-
-.search-bar {
-    top: 0rem;
-    left: 0rem;
-    width: 80%;
-    background-color: $Hero;
-    padding: 2rem 2rem 0;
 }

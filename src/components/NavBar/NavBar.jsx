@@ -14,8 +14,9 @@ function NavBar() {
                     <Link to="/flightsearch">
                         <h6 className='nav__pages'>Flights</h6>
                     </Link>
-                    
-                    <h6 className='nav__pages'>Hotels</h6>
+                    <Link to="/hotelsearch">
+                        <h6 className='nav__pages'>Hotels</h6>
+                    </Link>
                     <h6 className='nav__pages'>Planner</h6>
                 </div>
             </div>

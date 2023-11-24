@@ -1,8 +1,8 @@
 import './App.scss';
-import { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route, BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from './pages/HomePage/HomePage';
 import FlightsPage from './pages/FlightsPage/FlightsPage';
+import HotelsPage from './pages/HotelsPage/HotelsPage';
 
 
 function App() {
@@ -16,6 +16,8 @@ function App() {
           <Route path="/:city" element={<HomePage />} />
           <Route path='/flightsearch' element={<FlightsPage />} />
           <Route path='/flightsearch/:city' element={<FlightsPage />} />
+          <Route path='/hotelsearch/' element={<HotelsPage />} />
+          <Route path='/hotelsearch/:city' element={<HotelsPage />} />
         </Routes>
       </BrowserRouter>
  
