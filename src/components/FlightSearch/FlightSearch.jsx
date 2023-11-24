@@ -2,12 +2,24 @@ import { useState, useEffect } from "react";
 // import { useParams } from "react-router-dom";
 import "../FlightSearch/FlightSearch.scss";
 import axios from 'axios';
+import Modal from '../Modal/Modal';
 
 function FlightSearch(props) {
 
 const [flightData, setFlightData] = useState([])
 const city = props.city;
 const baseUrl = process.env.REACT_APP_BASE_URL;
+
+const [showModal, setShowModal] = useState(false);
+
+const openModal = () => {
+    setShowModal(true);
+    console.log("hiiii",openModal);
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+  };
 
 useEffect(() => {
     const fetchData = async () => {
@@ -29,6 +41,7 @@ useEffect(() => {
             <h1 className="flight__title">Flights</h1>
             {flightData.length > 0 ? (
             <ul className="flight__container">
+                <Modal showModal={showModal} closeModal={closeModal} />
                 {/* Using map to loop through all flight data */}
                 {flightData.map((flight, index) => {
                      return (
@@ -47,7 +60,10 @@ useEffect(() => {
                                 </div>
                                 <div className="flight__item-container">
                                     <span>{flight.price}</span>
-                                    <button className="item-button">Select</button>
+                                    <button className="item-button" onClick={() => {
+                                        openModal();
+                                        }}>Select
+                                    </button>
                                 </div>
                             </div>
                         </li>
