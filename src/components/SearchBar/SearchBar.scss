@@ -1,12 +1,19 @@
-.search-bar{
-    height: 2rem;
-    width: 85%;
-    background: white;
-    position: relative;
-    top: -6rem;
-    left: 1rem;
-    padding: 0.5rem;
+@use "../../styles/partials/colors" as *;
 
+.search-bar{
+    height: 4rem;
+    width: 85%;
+    background:$White;
+    position: relative;
+    top: 0rem;
+    left: 0rem;
+    padding: 1rem 1.5rem;
+
+    &__title {
+        margin-block-start: 0;
+        margin-block-end: 1rem;
+        font-size: 18px;
+    }
     &__dates {
         font-size: 12px;
         text-decoration: underline;

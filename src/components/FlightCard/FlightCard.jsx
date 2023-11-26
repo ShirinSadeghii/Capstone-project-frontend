@@ -12,16 +12,19 @@ const baseUrl = process.env.REACT_APP_BASE_URL;
             <div className="container__card">
                 <Link to="/flightsearch/Athens">
                     <img className="card__image" src={Greece} alt="greece"></img>
+                    <span className='card__city-title'>Athens</span>
                </Link> 
             </div>
             <div className="container__card">
                 <Link to="/flightsearch/Honolulu">
                     <img className="card__image" src={Hawaii} alt="hawaii"></img>
+                    <span className='card__city-title'>Honolulu</span>
                 </Link>
             </div>
             <div className="container__card">
                 <Link to="/flightsearch/Paris">
                     <img className="card__image"  src={Paris} alt="paris"></img>
+                    <span className='card__city-title'>Paris</span>
                 </Link>
             </div>
         </div>

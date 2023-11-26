@@ -66,15 +66,35 @@
     }
 }
 
+.flight__button {
+    border: none;
+    display: block;
+    padding: 0.5rem 1rem;
+    font-size: 14px;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    user-select: none;
+    color: black;
+  }
+  
+.flight__button span {
+    width: 90%;
+    height: 100%;
+    background: transparent;
+    border: 4px solid #f2ade8;
+    padding: 0.5rem 1rem;
+
+}
+  
+
 .item-button {
-    background-color: $White;
-    font-weight: 600;
+ border: 2px solid #000;
+ background: #e8e8e8;
+ font-weight: 600;
 }
 
-.search-bar {
-    top: 0rem;
-    left: 0rem;
-    width: 80%;
-    background-color: $Hero;
-    padding: 2rem 2rem 0;
-}
+
+
+
+   

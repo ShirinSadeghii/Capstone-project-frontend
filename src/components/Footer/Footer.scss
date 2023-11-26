@@ -1,8 +1,18 @@
+@use "../../styles/partials/colors" as *;
+
 .footer {
     display: flex;
     justify-content: space-between;
-    padding: 0 .5rem;
+    padding: 0 1rem;
     margin-block-start: 1rem;
+    padding-top: 1rem;
+    background-color: $Footer;
+
+    &__title {
+        color: $White;
+        font-weight: 700;
+    }
+
 
     &__socials{
         width: 30%;
@@ -12,13 +22,12 @@
         width: 40%;
 
         &-container {
-            padding-top: 10px;
-            line-height: 16px;
+            padding: 10px 0;
+            line-height: 18px;
         }
     }
 
     &__icon {
-        width: 20px;
         height: 20px;
     }
 
@@ -32,10 +41,12 @@
 .contact__subtitle {
     font-size: 12px;
     display: block;
+    font-weight: 600;
+    color: $White;
 }
 
 a {
     font-size: 12px;
     text-decoration: none;
-    color: black;
+    color: $White
 }

@@ -3,6 +3,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from './pages/HomePage/HomePage';
 import FlightsPage from './pages/FlightsPage/FlightsPage';
 import HotelsPage from './pages/HotelsPage/HotelsPage';
+import PlannerPage from './pages/PlannerPage/PlannerPage';
+import LoginPage from './pages/LoginPage/LoginPage';
+import SignUpPage from './pages/SignUpPage/SignUpPage';
 
 
 function App() {
@@ -18,6 +21,9 @@ function App() {
           <Route path='/flightsearch/:city' element={<FlightsPage />} />
           <Route path='/hotelsearch/' element={<HotelsPage />} />
           <Route path='/hotelsearch/:city' element={<HotelsPage />} />
+          <Route path='/planner' element={<PlannerPage />} />
+          <Route path='/login' element={<LoginPage />} />
+          <Route path='/signup' element={<SignUpPage />} />
         </Routes>
       </BrowserRouter>
  

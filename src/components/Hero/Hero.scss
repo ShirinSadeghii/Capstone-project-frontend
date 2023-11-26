@@ -1,3 +1,5 @@
+@use "../../styles/partials/colors" as *;
+
 .hero {
     background: url(../../assets//image/Bougainvillea-Greece-.jpg);
     height: 300px;
@@ -8,35 +10,19 @@
         height: 300px;
     }
 
-    // &__search-bar{
-    //     height: 3rem;
-    //     width: 85%;
-    //     background: white;
-    //     position: relative;
-    //     top: -6rem;
-    //     left: 1rem;
-    //     padding: 0.5rem;
-    // }
+    &__title {
+        margin-block-start: 0;
+        color:$White;
+        padding-top: 7rem;
+        padding-left: 1rem;
+        margin-block-end: 0.5rem;
+    }
 
-    // &__dates {
-    //     font-size: 12px;
-    //     text-decoration: underline;
-
-    //     &-join {
-    //         text-decoration: none;
-    //     }
-    // }
-
-    // &__button {
-    //     margin-left: 0.5rem;
-    // }
+    &__subtitle {
+        margin-block-start: 0;
+        color: $White;
+        font-weight: 600;
+        padding-left: 1rem;
+        font-style: italic;
+    }
 }
-
-// .drop-btn {
-//     width: 10px;
-// }
-
-// .react-calendar {
-//     position: relative;
-//     z-index: 1;
-// }

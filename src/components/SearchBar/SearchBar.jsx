@@ -4,7 +4,6 @@ import 'react-calendar/dist/Calendar.css';
 import DropDown from '../../assets/drop-down.png';
 import { useState } from 'react';
 import { useNavigate } from "react-router-dom";
-// import dataJson from '../../data/data.json';
 import axios from 'axios';
 
 
@@ -17,13 +16,12 @@ const navigate = useNavigate();
 const baseUrl = process.env.REACT_APP_BASE_URL; 
 const {path} = props;
 
+
 const handleSubmit = async (event) => {
     event.preventDefault();
     
     try {
         const response = await axios.get(`${baseUrl}/${city}`);
-        // console.log("hellooo", response.data)
-        // console.log("city:", city)
         
         navigate(`/${path}/${city}`);
     } catch (err) {
@@ -34,6 +32,7 @@ const handleSubmit = async (event) => {
 
     return (
         <div className='search-bar'>
+            <h2 className="search-bar__title">Search flights</h2>
             <form onSubmit={handleSubmit}>
                 <input type='text' onChange={(e) => setCity(e.target.value)} name='city' placeholder='search location'></input>
                 <button type="button" onClick={() => setShowCalendar(!showCalendar)}>
