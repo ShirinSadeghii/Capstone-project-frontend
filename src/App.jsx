@@ -6,6 +6,7 @@ import HotelsPage from './pages/HotelsPage/HotelsPage';
 import PlannerPage from './pages/PlannerPage/PlannerPage';
 import LoginPage from './pages/LoginPage/LoginPage';
 import SignUpPage from './pages/SignUpPage/SignUpPage';
+import ConfirmationPage from './pages/ConfirmationPage/ConfirmationPage';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path='/flightsearch/:city' element={<FlightsPage />} />
           <Route path='/hotelsearch/' element={<HotelsPage />} />
           <Route path='/hotelsearch/:city' element={<HotelsPage />} />
+          <Route path='/confirm' element={<ConfirmationPage />} />
           <Route path='/planner' element={<PlannerPage />} />
           <Route path='/login' element={<LoginPage />} />
           <Route path='/signup' element={<SignUpPage />} />

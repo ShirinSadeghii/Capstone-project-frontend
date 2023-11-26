@@ -1,7 +1,16 @@
 import Close from '../../assets/close-24px.svg';
 import "../Modal/Modal.scss";
+import { useNavigate } from 'react-router-dom';
 
 const Modal = ({ showModal, closeModal}) => {
+const navigate = useNavigate();
+
+  function handleSubmit (event) {
+    const confirmSubmit = () => {
+        navigate("/confirm");
+    }
+    confirmSubmit();
+}
     return (
       <div className={`modal ${showModal ? "show" : ""}`}>
         <div className="modal__content">
@@ -25,7 +34,7 @@ const Modal = ({ showModal, closeModal}) => {
               Cancel
             </button>
 
-            <button class="fancy" >
+            <button onClick={handleSubmit} class="fancy" >
                 <span class="top-key"></span>
                 <span class="text">Buy Ticket</span>
                 <span class="bottom-key-1"></span>

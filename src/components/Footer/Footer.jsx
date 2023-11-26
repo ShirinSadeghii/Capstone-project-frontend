@@ -9,9 +9,15 @@ function Footer() {
             <div className="footer__socials">
                 <span className="footer__title">Socials</span>
                 <div className="footer__icon-container">
-                    <img className="footer__icon" src={Twitter} alt="twitter icon"></img>
-                    <img className="footer__icon" src={Facebook} alt="facebook icon"></img>
-                    <img className="footer__icon" src={Instagram} alt="instagram icon"></img>
+                    <a href="https://twitter.com/">
+                        <img className="footer__icon" src={Twitter} alt="twitter icon"></img>
+                    </a>
+                    <a href="https://www.facebook.com/">
+                        <img className="footer__icon" src={Facebook} alt="facebook icon"></img>
+                    </a>
+                    <a href="https://www.instagram.com/">
+                        <img className="footer__icon" src={Instagram} alt="instagram icon"></img>
+                    </a>
                 </div>
             </div> 
             <div className="footer__contact">
