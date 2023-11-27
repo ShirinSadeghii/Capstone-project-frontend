@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-// import { useParams } from "react-router-dom";
 import "../FlightSearch/FlightSearch.scss";
 import axios from 'axios';
 import Modal from '../Modal/Modal';

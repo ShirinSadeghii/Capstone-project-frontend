@@ -11,6 +11,7 @@ import Barcelona from '../../assets/image/barcelona.jpeg';
 function HotelSearch(props) {
 
 const [hotelData, setHotelData] = useState([])
+const [selectedHotel, setSelectedHotel] = useState(null);
 const city = props.city;
 const baseUrl = process.env.REACT_APP_BASE_URL;
 
@@ -20,9 +21,13 @@ const openModal = () => {
     setShowModal(true);
   };
 
-  const closeModal = () => {
+const closeModal = () => {
     setShowModal(false);
   };
+
+const handleHotelSelect = (hotel) => {
+    setSelectedHotel(hotel);
+  }
 
 useEffect(() => {
     const fetchData = async () => {
@@ -47,7 +52,7 @@ useEffect(() => {
                     {hotelData.map((hotel, index) => {
                          return (
                             <li key={index} className="hotel__list">
-                                <ModalHotel showModal={showModal} closeModal={closeModal} />
+                                <ModalHotel showModal={showModal} closeModal={closeModal} hotelData={selectedHotel}/>
                                 <div className="hotel__item">
                                     <div className="hotel__item-container">
                                         <div className="hotel__sub-container1">
@@ -59,6 +64,7 @@ useEffect(() => {
                                             <div className="hotel__price-container">
                                                 <span className="hotel__price">{hotel.price}</span>
                                                 <button className="price-button" onClick={() => {
+                                                    handleHotelSelect(hotel);
                                                     openModal();}}>Select</button>
                                             </div>
                                        </div>
@@ -72,7 +78,7 @@ useEffect(() => {
                     //display default random hotels
                 <ul className="hotel__default-container">
                     <li className="hotel__list">
-                        <ModalHotel showModal={showModal} closeModal={closeModal} />
+                        <ModalHotel showModal={showModal} closeModal={closeModal} hotelData={selectedHotel} />
                                 <div className="hotel__item">
                                     <div className="hotel__item-container">
                                         <div className="hotel__sub-container1">
@@ -91,7 +97,7 @@ useEffect(() => {
                                 </div>
                     </li>
                     <li className="hotel__list">
-                        <ModalHotel showModal={showModal} closeModal={closeModal} />
+                        <ModalHotel showModal={showModal} closeModal={closeModal} hotelData={selectedHotel} />
                                 <div className="hotel__item">
                                     <div className="hotel__item-container">
                                         <div className="hotel__sub-container1">
@@ -110,7 +116,7 @@ useEffect(() => {
                                 </div>
                     </li>
                     <li className="hotel__list">
-                        <ModalHotel showModal={showModal} closeModal={closeModal} />
+                        <ModalHotel showModal={showModal} closeModal={closeModal} hotelData={selectedHotel} />
                                 <div className="hotel__item">
                                     <div className="hotel__item-container">
                                         <div className="hotel__sub-container1">
@@ -129,7 +135,7 @@ useEffect(() => {
                                 </div>
                     </li>
                     <li className="hotel__list">
-                        <ModalHotel showModal={showModal} closeModal={closeModal} />
+                        <ModalHotel showModal={showModal} closeModal={closeModal} hotelData={selectedHotel} />
                                 <div className="hotel__item">
                                     <div className="hotel__item-container">
                                         <div className="hotel__sub-container1">

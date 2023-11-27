@@ -1,16 +1,18 @@
 import Close from '../../assets/close-24px.svg';
+import Luggage from "../../assets/luggage.png";
 import "../Modal/Modal.scss";
 import { useNavigate } from 'react-router-dom';
 
-const ModalHotel = ({ showModal, closeModal}) => {
+const ModalHotel = ({ showModal, closeModal, hotelData}) => {
 const navigate = useNavigate();
 
   function handleSubmit (event) {
     const confirmSubmit = () => {
-        navigate("/confirmhotel");
+        navigate("/confirmhotel", {state: {hotelData}});
     }
     confirmSubmit();
 }
+
     return (
       <div className={`modal ${showModal ? "show" : ""}`}>
         <div className="modal__content">
@@ -23,8 +25,9 @@ const navigate = useNavigate();
                 alt="close window logo"/>
             </div>
             <div className="modal__sub-container">
+              <img className="modal__logo" src={Luggage} alt="luggage icon"></img>
               <p className='modal__message'>
-                Please confirm if you would like to book this hotel. 
+                Please confirm if you would like to book your stay with {hotelData?.name} 
               </p>
             </div>
           </div>
