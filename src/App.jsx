@@ -1,5 +1,5 @@
 import './App.scss';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useSearchParams } from "react-router-dom";
 import HomePage from './pages/HomePage/HomePage';
 import FlightsPage from './pages/FlightsPage/FlightsPage';
 import HotelsPage from './pages/HotelsPage/HotelsPage';
@@ -8,10 +8,13 @@ import LoginPage from './pages/LoginPage/LoginPage';
 import SignUpPage from './pages/SignUpPage/SignUpPage';
 import FlightConfirmPage from './pages/FlightConfirmPage/FlightConfirmPage';
 import HotelConfirmPage from './pages/HotelConfirmPage/HotelConfirmPage';
+import ProfilePage from './pages/ProfilePage/ProfilePage';
+import { useState } from 'react';
 
 
 function App() {
 
+const [userInfo, setUserInfo] = useState({});
 
   return (
     <div>
@@ -26,8 +29,9 @@ function App() {
           <Route path='/hotelsearch/:city' element={<HotelsPage />} />
           <Route path='/confirmhotel' element={<HotelConfirmPage />} />
           <Route path='/planner' element={<PlannerPage />} />
-          <Route path='/login' element={<LoginPage />} />
+          <Route path='/login' element={<LoginPage setUserInfo={setUserInfo} />} />
           <Route path='/signup' element={<SignUpPage />} />
+          <Route path='/profile' element={<ProfilePage userInfo={userInfo}/>} />
         </Routes>
       </BrowserRouter>
  

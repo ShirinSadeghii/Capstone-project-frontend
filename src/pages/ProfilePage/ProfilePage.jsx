@@ -1,16 +1,16 @@
 import NavBar from "../../components/NavBar/NavBar";
-import Login from "../../components/Login/Login";
 import Footer from "../../components/Footer/Footer";
+import Profile from "../../components/Profile/Profile";
 
-function LoginPage({setUserInfo}) {
+function ProfilePage({userInfo}) {
     return (
         <>
         <NavBar />
-        <Login setUserInfo={setUserInfo}/>
+        <Profile userInfo={userInfo} />
         <Footer />
         </>
         
     )
 }
 
-export default LoginPage
+export default ProfilePage

@@ -34,11 +34,11 @@ const navigate = useNavigate();
               Cancel
             </button>
 
-            <button onClick={handleSubmit} class="fancy" >
-                <span class="top-key"></span>
-                <span class="text">Book</span>
-                <span class="bottom-key-1"></span>
-                <span class="bottom-key-2"></span>
+            <button onClick={handleSubmit} className="fancy" >
+                <span className="top-key"></span>
+                <span className="text">Book</span>
+                <span className="bottom-key-1"></span>
+                <span className="bottom-key-2"></span>
             </button>
 
           </div>
