@@ -20,6 +20,8 @@ const openModal = () => {
     setShowModal(false);
   };
 
+ 
+
 useEffect(() => {
     const fetchData = async () => {
         try {
@@ -44,7 +46,7 @@ useEffect(() => {
                 {flightData.map((flight, index) => {
                      return (
                         <li key={index} className="flight__list">
-                            <Modal showModal={showModal} closeModal={closeModal} />
+                            <Modal showModal={showModal} closeModal={closeModal} flightData={flightData} />
                             <div className="flight__item">
                                 <div className="flight__item-container">
                                     <div className="flight__sub-container1">
@@ -73,7 +75,7 @@ useEffect(() => {
                 //display default random flights
                 <ul className="flight__default-container">
                     <li className="flight__list">
-                        <Modal showModal={showModal} closeModal={closeModal} />
+                        <Modal showModal={showModal} closeModal={closeModal} flightData={flightData} />
                             <div className="flight__item">
                                 <div className="flight__item-container">
                                     <div className="flight__sub-container1">

@@ -2,8 +2,10 @@ import Close from '../../assets/close-24px.svg';
 import "../Modal/Modal.scss";
 import { useNavigate } from 'react-router-dom';
 
-const Modal = ({ showModal, closeModal}) => {
+const Modal = ({ showModal, closeModal, flightData}) => {
 const navigate = useNavigate();
+
+console.log("plsss", flightData);
 
   function handleSubmit (event) {
     const confirmSubmit = () => {
@@ -11,6 +13,8 @@ const navigate = useNavigate();
     }
     confirmSubmit();
 }
+
+ 
     return (
       <div className={`modal ${showModal ? "show" : ""}`}>
         <div className="modal__content">
@@ -24,7 +28,8 @@ const navigate = useNavigate();
             </div>
             <div className="modal__sub-container">
               <p className='modal__message'>
-                Please confirm if you would like to book this flight. 
+                Please confirm if you would like to book this flight to {flightData[0]?.destination_city},
+                with {flightData?.airline}. 
               </p>
             </div>
           </div>
