@@ -77,6 +77,7 @@ useEffect(() => {
                 ) : (
                     //display default random hotels
                 <ul className="hotel__default-container">
+                    <p className="hotel__current-deals">Browse Our Best Deals:</p>
                     <li className="hotel__list">
                         <ModalHotel showModal={showModal} closeModal={closeModal} hotelData={selectedHotel} />
                                 <div className="hotel__item">
@@ -88,7 +89,7 @@ useEffect(() => {
                                             <span className="item-subtitle">Four Season Paris</span>
                                             <img className="hotel__rating" src={Star} alt="star rating" />
                                             <div className="hotel__price-container">
-                                                <span className="hotel__price">From $600/night</span>
+                                                <span className="hotel__price">From $350/night</span>
                                                 <button className="price-button" onClick={() => {
                                                     openModal();}}>Select</button>
                                             </div>
@@ -107,7 +108,7 @@ useEffect(() => {
                                             <span className="item-subtitle">Mondrian Park Avenue</span>
                                             <img className="hotel__rating" src={Star} alt="star rating" />
                                             <div className="hotel__price-container">
-                                                <span className="hotel__price">From $500/night</span>
+                                                <span className="hotel__price">From $400/night</span>
                                                 <button className="price-button" onClick={() => {
                                                     openModal();}}>Select</button>
                                             </div>
@@ -126,7 +127,7 @@ useEffect(() => {
                                             <span className="item-subtitle">The Dolli at Acropolis</span>
                                             <img className="hotel__rating" src={Star} alt="star rating" />
                                             <div className="hotel__price-container">
-                                                <span className="hotel__price">From $500/night</span>
+                                                <span className="hotel__price">From $370/night</span>
                                                 <button className="price-button" onClick={() => {
                                                     openModal();}}>Select</button>
                                             </div>

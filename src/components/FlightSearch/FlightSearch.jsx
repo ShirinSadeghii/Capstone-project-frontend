@@ -78,6 +78,7 @@ useEffect(() => {
                ) : (
                 //display default random flights
                 <ul className="flight__default-container">
+                    <p className="flight__current-deals">Browse Our Best Deals:</p>
                     <li className="flight__list">
                         <Modal showModal={showModal} closeModal={closeModal} flightData={selectedFlight} />
                             <div className="flight__item">

@@ -1,3 +1,38 @@
+@use "../../styles/partials/colors" as *;
+
 .profile {
-    padding: 0 1rem;
+    padding: 1rem;
+
+    &__card {
+        width: 70%;
+    }
+
+    &__title {
+        margin-block-start: 0;
+    }
+
+    &__sub-title {
+        margin-block-end: 0;
+        font-style: italic;
+    }
+
+}
+
+.card__title {
+    position: relative;
+    top: 6.5rem;
+    left: 1.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    color: $Font;
+    font-weight: 600;
+    font-size: 18px;
+    background-color: $White;
+    margin-block-start: 0;
+    margin-block-end: 0.5rem;
+}
+
+.card__img {
+    width: 200px;
+    border-radius: 8px;
 }
