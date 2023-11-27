@@ -7,6 +7,7 @@ import Modal from '../Modal/Modal';
 function FlightSearch(props) {
 
 const [flightData, setFlightData] = useState([])
+const [selectedFlight, setSelectedFlight] = useState(null);
 const city = props.city;
 const baseUrl = process.env.REACT_APP_BASE_URL;
 
@@ -20,7 +21,9 @@ const openModal = () => {
     setShowModal(false);
   };
 
- 
+const handleFlightSelect = (flight) => {
+    setSelectedFlight(flight);
+  }
 
 useEffect(() => {
     const fetchData = async () => {
@@ -46,7 +49,7 @@ useEffect(() => {
                 {flightData.map((flight, index) => {
                      return (
                         <li key={index} className="flight__list">
-                            <Modal showModal={showModal} closeModal={closeModal} flightData={flightData} />
+                            <Modal showModal={showModal} closeModal={closeModal} flightData={selectedFlight} />
                             <div className="flight__item">
                                 <div className="flight__item-container">
                                     <div className="flight__sub-container1">
@@ -62,7 +65,9 @@ useEffect(() => {
                                 <div className="flight__item-container">
                                     <span>{flight.price}</span>
                                     <button className="flight__button" onClick={() => {
-                                        openModal();}}>
+                                        handleFlightSelect(flight);
+                                        openModal();
+                                        }}>
                                         <span className="text">Select</span>
                                     </button>
                                 </div>
@@ -75,7 +80,7 @@ useEffect(() => {
                 //display default random flights
                 <ul className="flight__default-container">
                     <li className="flight__list">
-                        <Modal showModal={showModal} closeModal={closeModal} flightData={flightData} />
+                        <Modal showModal={showModal} closeModal={closeModal} flightData={selectedFlight} />
                             <div className="flight__item">
                                 <div className="flight__item-container">
                                     <div className="flight__sub-container1">
@@ -91,7 +96,8 @@ useEffect(() => {
                                 <div className="flight__item-container">
                                     <span>$850</span>
                                     <button className="flight__button" onClick={() => {
-                                        openModal();}}>
+                                        openModal();
+                                        }}>
                                         <span className="text">Select</span>
                                     </button>
                                 </div>
@@ -113,7 +119,8 @@ useEffect(() => {
                                 <div className="flight__item-container">
                                     <span>$415</span>
                                     <button className="flight__button" onClick={() => {
-                                        openModal();}}>
+                                        openModal();
+                                        }}>
                                         <span className="text">Select</span>
                                     </button>
                                 </div>
@@ -135,7 +142,8 @@ useEffect(() => {
                                 <div className="flight__item-container">
                                     <span>$1,500</span>
                                     <button className="flight__button" onClick={() => {
-                                        openModal();}}>
+                                        openModal();
+                                        }}>
                                         <span className="text">Select</span>
                                     </button>
                                 </div>
@@ -157,7 +165,8 @@ useEffect(() => {
                                 <div className="flight__item-container">
                                     <span>$1,880</span>
                                     <button className="flight__button" onClick={() => {
-                                        openModal();}}>
+                                        openModal();
+                                        }}>
                                         <span className="text">Select</span>
                                     </button>
                                 </div>

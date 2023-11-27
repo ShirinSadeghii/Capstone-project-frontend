@@ -5,8 +5,6 @@ import { useNavigate } from 'react-router-dom';
 const Modal = ({ showModal, closeModal, flightData}) => {
 const navigate = useNavigate();
 
-console.log("plsss", flightData);
-
   function handleSubmit (event) {
     const confirmSubmit = () => {
         navigate("/confirmflight");
@@ -28,8 +26,8 @@ console.log("plsss", flightData);
             </div>
             <div className="modal__sub-container">
               <p className='modal__message'>
-                Please confirm if you would like to book this flight to {flightData[0]?.destination_city},
-                with {flightData?.airline}. 
+              Please confirm if you would like to book this flight to {flightData?.destination_city},
+              with {flightData?.airline} for {flightData?.date}
               </p>
             </div>
           </div>
