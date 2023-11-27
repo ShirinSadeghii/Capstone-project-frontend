@@ -12,18 +12,19 @@
 
     &__container {
         display: flex;
-        width: 60%;
+        width: 65%;
         justify-content: space-between;
         align-items: center;
 
         &-img {
             display: flex;
-            width: 35%
+            width: 30%
         }
     }
 
     &__pages {
         color: #f2ade8;
-        font-weight: 900;
+        font-weight: 800;
+        font-size: 9px;
     }
 }

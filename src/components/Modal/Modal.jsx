@@ -1,13 +1,14 @@
 import Close from '../../assets/close-24px.svg';
 import "../Modal/Modal.scss";
 import { useNavigate } from 'react-router-dom';
+import Plane from "../../assets/air-transport.png";
 
 const Modal = ({ showModal, closeModal, flightData}) => {
 const navigate = useNavigate();
 
   function handleSubmit (event) {
     const confirmSubmit = () => {
-        navigate("/confirmflight");
+        navigate("/confirmflight", { state: {flightData}});
     }
     confirmSubmit();
 }
@@ -25,6 +26,7 @@ const navigate = useNavigate();
                 alt="close window logo"/>
             </div>
             <div className="modal__sub-container">
+              <img className='modal__logo' src={Plane} alt="plane icon"></img>
               <p className='modal__message'>
               Please confirm if you would like to book this flight to {flightData?.destination_city},
               with {flightData?.airline} for {flightData?.date}
