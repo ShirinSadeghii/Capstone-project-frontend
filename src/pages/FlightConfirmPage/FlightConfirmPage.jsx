@@ -2,7 +2,7 @@ import NavBar from "../../components/NavBar/NavBar";
 import Footer from "../../components/Footer/Footer";
 import FlightConfirmation from "../../components/FlightConfirmation/FlightConfirmation";
 
-function ConfirmationPage() {
+function FlightConfirmPage() {
     return (
         <>
             <NavBar />
@@ -12,4 +12,4 @@ function ConfirmationPage() {
     )
 }
 
-export default ConfirmationPage
+export default FlightConfirmPage

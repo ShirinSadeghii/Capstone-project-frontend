@@ -7,7 +7,7 @@ const navigate = useNavigate();
 
   function handleSubmit (event) {
     const confirmSubmit = () => {
-        navigate("/confirm");
+        navigate("/confirmflight");
     }
     confirmSubmit();
 }

@@ -1,0 +1,36 @@
+@use "../../styles/partials/colors" as *;
+
+.confirm {
+    padding: 1rem;
+    background-color: $Hero;
+    
+    &__title {
+        margin-block-start: 0;
+    }
+
+    &__container {
+        background-color: $White;
+        border-radius: 0.5rem;
+        padding: 1rem 0.5rem;
+    }
+
+    &__logo {
+        padding-right: 8px;
+        height: 20px;
+    }
+
+    &__text {
+        margin-block-start: 0;
+        line-height: 22px;
+    }
+
+    &__sub-text {
+        margin-block-start: 0.5rem;
+        line-height: 20px;
+        font-size: 14px;
+    }
+
+    &__flight-details {
+        margin-block-start: 2rem;
+    }
+}
