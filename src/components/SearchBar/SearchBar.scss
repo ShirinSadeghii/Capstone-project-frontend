@@ -23,8 +23,28 @@
         }
     }
 
+    &__input {
+        padding: 0.2rem;
+    }
+
+    &__calendar {
+        padding: 0.2rem 0.4rem;
+        margin-left: 0.2rem;
+    }
+
     &__button {
         margin-left: 0.5rem;
+        background-color: $Button;
+        border: 2px solid $Button-Border;
+        color: $White;
+        font-weight: 600;
+        padding: 0.2rem 0.5rem;
+
+        &:hover {
+            background-color: #f5c7f7a3;
+            transition: all 0.2s ease-out;
+            border: 1px solid #cccccc;
+        }
     }
 }
 

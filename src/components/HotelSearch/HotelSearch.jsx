@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from 'axios';
 import "../HotelSearch/HotelSearch.scss";
+import ModalHotel from "../ModalHotel/ModalHotel";
 import Star from '../../assets/4star.png';
 import Paris from '../../assets/image/paris-1.jpeg';
 import NYC from '../../assets/image/nyc.jpeg';
@@ -12,6 +13,16 @@ function HotelSearch(props) {
 const [hotelData, setHotelData] = useState([])
 const city = props.city;
 const baseUrl = process.env.REACT_APP_BASE_URL;
+
+const [showModal, setShowModal] = useState(false);
+
+const openModal = () => {
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+  };
 
 useEffect(() => {
     const fetchData = async () => {
@@ -31,12 +42,12 @@ useEffect(() => {
             <div className="hotel">
                 <h1 className="hotel__title">Hotels</h1>
                 {hotelData.length > 0 ? (
-
                 <ul className="hotel__container">
                     {/* Using map to loop through all hotel data */}
                     {hotelData.map((hotel, index) => {
                          return (
                             <li key={index} className="hotel__list">
+                                <ModalHotel showModal={showModal} closeModal={closeModal} />
                                 <div className="hotel__item">
                                     <div className="hotel__item-container">
                                         <div className="hotel__sub-container1">
@@ -47,14 +58,11 @@ useEffect(() => {
                                             <img className="hotel__rating" src={`${baseUrl}/data/images/${hotel.rating}`} alt="star rating" />
                                             <div className="hotel__price-container">
                                                 <span className="hotel__price">{hotel.price}</span>
-                                                <button className="price-button">Select</button>
+                                                <button className="price-button" onClick={() => {
+                                                    openModal();}}>Select</button>
                                             </div>
                                        </div>
                                     </div>
-                                    {/* <div className="hotel__item-container">
-                                        <span>{hotel.price}</span>
-                                        <button className="item-button">Select</button>
-                                    </div> */}
                                 </div>
                             </li>
                         )
@@ -64,6 +72,7 @@ useEffect(() => {
                     //display default random hotels
                 <ul className="hotel__default-container">
                     <li className="hotel__list">
+                        <ModalHotel showModal={showModal} closeModal={closeModal} />
                                 <div className="hotel__item">
                                     <div className="hotel__item-container">
                                         <div className="hotel__sub-container1">
@@ -74,13 +83,15 @@ useEffect(() => {
                                             <img className="hotel__rating" src={Star} alt="star rating" />
                                             <div className="hotel__price-container">
                                                 <span className="hotel__price">From $600/night</span>
-                                                <button className="price-button">Select</button>
+                                                <button className="price-button" onClick={() => {
+                                                    openModal();}}>Select</button>
                                             </div>
                                        </div>
                                     </div>
                                 </div>
                     </li>
                     <li className="hotel__list">
+                        <ModalHotel showModal={showModal} closeModal={closeModal} />
                                 <div className="hotel__item">
                                     <div className="hotel__item-container">
                                         <div className="hotel__sub-container1">
@@ -91,13 +102,15 @@ useEffect(() => {
                                             <img className="hotel__rating" src={Star} alt="star rating" />
                                             <div className="hotel__price-container">
                                                 <span className="hotel__price">From $500/night</span>
-                                                <button className="price-button">Select</button>
+                                                <button className="price-button" onClick={() => {
+                                                    openModal();}}>Select</button>
                                             </div>
                                        </div>
                                     </div>
                                 </div>
                     </li>
                     <li className="hotel__list">
+                        <ModalHotel showModal={showModal} closeModal={closeModal} />
                                 <div className="hotel__item">
                                     <div className="hotel__item-container">
                                         <div className="hotel__sub-container1">
@@ -108,13 +121,15 @@ useEffect(() => {
                                             <img className="hotel__rating" src={Star} alt="star rating" />
                                             <div className="hotel__price-container">
                                                 <span className="hotel__price">From $500/night</span>
-                                                <button className="price-button">Select</button>
+                                                <button className="price-button" onClick={() => {
+                                                    openModal();}}>Select</button>
                                             </div>
                                        </div>
                                     </div>
                                 </div>
                     </li>
                     <li className="hotel__list">
+                        <ModalHotel showModal={showModal} closeModal={closeModal} />
                                 <div className="hotel__item">
                                     <div className="hotel__item-container">
                                         <div className="hotel__sub-container1">
@@ -125,7 +140,8 @@ useEffect(() => {
                                             <img className="hotel__rating" src={Star} alt="star rating" />
                                             <div className="hotel__price-container">
                                                 <span className="hotel__price">From $160/night</span>
-                                                <button className="price-button">Select</button>
+                                                <button className="price-button" onClick={() => {
+                                                    openModal();}}>Select</button>
                                             </div>
                                        </div>
                                     </div>

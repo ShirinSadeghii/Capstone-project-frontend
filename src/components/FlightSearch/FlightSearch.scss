@@ -26,7 +26,7 @@
         margin-bottom: 2rem;
         background-color: $White;
         border-radius: .5rem;
-        padding: 1rem 0.5rem;
+        padding: 1rem 0.8rem;
     }
 
     &__item {
@@ -67,26 +67,20 @@
 }
 
 .flight__button {
-    border: none;
-    display: block;
-    padding: 0.5rem 1rem;
-    font-size: 14px;
-    font-weight: 500;
-    background: transparent;
-    cursor: pointer;
-    user-select: none;
-    color: black;
-  }
-  
-.flight__button span {
-    width: 90%;
-    height: 100%;
-    background: transparent;
-    border: 4px solid #f2ade8;
-    padding: 0.5rem 1rem;
+    background-color: $Button;
+    border: 2px solid $Button-Border;
+    color: $White;
+    font-weight: 600;
+    padding: 0.2rem 0.5rem;
 
+    &:hover {
+        background-color: #f5c7f7a3;
+        transition: all 0.2s ease-out;
+        border: 1px solid #cccccc;
+    }
 }
   
+
 
 .item-button {
  border: 2px solid #000;

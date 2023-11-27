@@ -28,8 +28,6 @@
         padding: 1rem 0.5rem;
     }
     &__item {
-        // display: flex;
-        // justify-content: space-between;
         height: 150px;
 
         &-container {
@@ -76,6 +74,15 @@
 .price-button {
     width: 4rem;
     margin-left: 6%;
-    background-color: $White;
+    background-color: $Button;
+    border: 2px solid $Button-Border;
+    color: $White;
     font-weight: 600;
+    padding: 0.2rem;
+
+    &:hover {
+        background-color: #f5c7f7a3;
+        transition: all 0.2s ease-out;
+        border: 1px solid #cccccc;
+    }
 }

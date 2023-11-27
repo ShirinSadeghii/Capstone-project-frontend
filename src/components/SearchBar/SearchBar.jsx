@@ -34,8 +34,8 @@ const handleSubmit = async (event) => {
         <div className='search-bar'>
             <h2 className="search-bar__title">Search flights</h2>
             <form onSubmit={handleSubmit}>
-                <input type='text' onChange={(e) => setCity(e.target.value)} name='city' placeholder='search location'></input>
-                <button type="button" onClick={() => setShowCalendar(!showCalendar)}>
+                <input className="search-bar__input" type='text' onChange={(e) => setCity(e.target.value)} name='city' placeholder='search location'></input>
+                <button className="search-bar__calendar" type="button" onClick={() => setShowCalendar(!showCalendar)}>
                     <img className="drop-btn" src={DropDown} alt='drop-down icon' />
                 </button>
                 {showCalendar && ( 
