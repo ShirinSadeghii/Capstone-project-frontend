@@ -1,5 +1,5 @@
 # Project Title
-Name is to be yet determined. 
+Thynk Travel 
 
 ## Overview
 What is your app? Brief description in a couple of sentences.
