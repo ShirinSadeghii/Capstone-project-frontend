@@ -4,11 +4,22 @@ import Hotel from "../../assets/HotelAesthetic.jpg";
 import Planner from "../../assets/PlannerAesthetic.jpg";
 import { Link } from "react-router-dom";
 
-function Profile( {userInfo}) {
+function Profile( {userInfo} ) {
+
+console.log(userInfo);
+
+// Save data to localStorage
+if (userInfo) {
+  localStorage.setItem('username', userInfo.message);
+}
+
+// Get saved data from localStorage
+let username = localStorage.getItem('username');
+
 
   return(
     <div className="profile">
-       <h2 className="profile__title">Welcome {userInfo.name}!</h2>
+       <h2 className="profile__title"> {username}</h2>
        <p className="profile__sub-title">Start planning your next trip</p>
        <div className="profile__card">
         <Link to="/flightsearch">

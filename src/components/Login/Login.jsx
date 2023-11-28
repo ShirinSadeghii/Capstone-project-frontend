@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import "../Login/Login.scss";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 function Login({setUserInfo}) {
 
@@ -9,14 +9,12 @@ const baseUrl = process.env.REACT_APP_BASE_URL;
 const loginUrl = `${baseUrl}/login`;
 const profileUrl = `${baseUrl}/profile`;
 const navigate = useNavigate();
+const location = useLocation();
 
 
 const [isLoggedIn, setIsLoggedIn] = useState(false);
 const [isLoginError, setIsLoginError] = useState(false);
 const [errorMessage, setErrorMessage] = useState("");
-
-// const [userInfo, setUserInfo] = useState({});
-
 
 const handleLogin = async (e) => {
   e.preventDefault();
@@ -32,12 +30,10 @@ const handleLogin = async (e) => {
 
   if (response.status === 200) {
     // Store the token in sessionStorage
-    console.log("logged in!")
     sessionStorage.setItem('token', response.data.token);
     setIsLoggedIn(true);
     setIsLoginError(false);
 
-    navigate("/profile");
     }
   } catch (error) {
     console.error("Login failed:", error);
@@ -49,16 +45,17 @@ const handleLogin = async (e) => {
 useEffect(() => {
   const checkLogin = () => {
       const token = sessionStorage.getItem('token');
-      console.log(token);
       if (token)  { 
           setIsLoggedIn(true);
+          if (location.pathname === '/login') {
+            navigate('/profile');
+          }
       } else {
           setIsLoggedIn(false);
       }
   }
   checkLogin();
-
-}, []);
+}, [navigate, location.pathname]);
 
     useEffect(() => {
       if (isLoggedIn) {
