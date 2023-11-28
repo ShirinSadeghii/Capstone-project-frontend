@@ -58,7 +58,7 @@ function Footer() {
                 </div>
             </div>
             <div className="footer__tablet">
-                <span className="footer__tablet-copyright">©2023 THYNK TRAVEL | Created By: Shirin </span>
+                <span className="footer__tablet-copyright">©2023 THYNK TRAVEL |<br></br> Created By: Shirin </span>
             </div>
         </div>
     )

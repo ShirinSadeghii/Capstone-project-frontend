@@ -8,11 +8,17 @@
     @include tablet {
         padding: 1.5rem 2rem;
     }
+    @include desktop {
+        padding: 2rem 3.5rem;
+    }
     
     &__title {
         margin-block-start: 0;
         @include tablet {
             font-size: 26px;
+        }
+        @include desktop {
+            font-size: 28px;
         }
     }
 
@@ -46,6 +52,10 @@
         @include tablet {
             font-size: 18px;
             line-height: 28px;
+        }
+        @include desktop {
+            font-size: 20px;
+            line-height: 30px;
         }
     }
 

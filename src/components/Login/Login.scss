@@ -20,6 +20,12 @@
     @include tablet {
       margin-left: 35%;
     }
+    @include desktop {
+      margin-left: 40%;
+      width: 250px;
+      margin-block-start: 2.5rem;
+      margin-block-end: 3rem;
+    }
   }
   
   .form_main::before {

@@ -10,6 +10,9 @@
     @include tablet {
         padding: 1rem 2rem;
     }
+    @include desktop {
+        padding: 2rem;
+    }
 
     &__title {
         color: $White;
@@ -18,6 +21,10 @@
 
         @include tablet {
             font-size: 18px;
+        }
+        @include desktop {
+            font-size: 22px;
+            padding-bottom: 14px;
         }
     }
 
@@ -48,6 +55,9 @@
             @include tablet {
                 line-height: 22px;
             }
+            @include desktop {
+                line-height: 26px;
+            }
         }
     }
     &__icons {
@@ -56,6 +66,9 @@
     }
     &__icon {
         height: 20px;
+        @include desktop {
+            height: 1.5rem;
+        }
     }
 
     &__icon-container {
@@ -99,6 +112,9 @@
             @include tablet {
                 display: flex;
             }
+            @include desktop {
+                font-size: 15px;
+            }
         }
 
         &-title {
@@ -110,6 +126,9 @@
                 font-weight: 700;
                 padding-bottom: 10px;
             }
+            @include desktop {
+                font-size: 22px;
+            }
             
         }
 
@@ -120,6 +139,9 @@
                 padding: 10px 0;
                 line-height: 22px;
             }
+            @include desktop {
+                line-height: 26px;
+            }
         }
 
         &-copyright {
@@ -128,6 +150,10 @@
                 font-weight: 600;
                 font-size: 10px;
                 line-height: 18px;
+            }
+            @include desktop {
+                font-size: 12px;
+                line-height: 24px;
             }
         }
     }  
@@ -142,6 +168,9 @@
     @include tablet {
         font-size: 14px;
     }
+    @include desktop {
+        font-size: 15px;
+    }
     
 }
 
@@ -155,5 +184,7 @@ a {
         font-size: 13px;
         font-weight: 600;
     }
-
+    @include desktop {
+        font-size: 15px;
+    }
 }
