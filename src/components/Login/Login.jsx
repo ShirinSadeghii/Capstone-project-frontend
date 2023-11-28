@@ -55,7 +55,7 @@ useEffect(() => {
       }
   }
   checkLogin();
-}, [navigate, location.pathname]);
+}, [navigate, location.pathname, isLoggedIn]);
 
     useEffect(() => {
       if (isLoggedIn) {

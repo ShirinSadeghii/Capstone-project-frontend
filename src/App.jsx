@@ -1,5 +1,5 @@
 import './App.scss';
-import { BrowserRouter, Routes, Route, useSearchParams } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useNavigate} from "react-router-dom";
 import HomePage from './pages/HomePage/HomePage';
 import FlightsPage from './pages/FlightsPage/FlightsPage';
 import HotelsPage from './pages/HotelsPage/HotelsPage';
@@ -12,10 +12,10 @@ import ProfilePage from './pages/ProfilePage/ProfilePage';
 import { useState } from 'react';
 
 
+
 function App() {
 
 const [userInfo, setUserInfo] = useState(null);
-
   return (
     <div>
       <BrowserRouter>

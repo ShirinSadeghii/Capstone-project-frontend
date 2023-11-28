@@ -1,15 +1,15 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import axios from "axios";
 import nameIcon from '../../assets/user.svg';
 import "../Login/Login.scss";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 
 function SignUp() {
 
 const baseUrl = process.env.REACT_APP_BASE_URL; 
-
 const signupUrl = `${baseUrl}/signup`;
+const navigate = useNavigate();
 const [isSignedUp, setIsSignedUp] = useState(false);
 
 
@@ -29,6 +29,7 @@ const handleSignup = async (e) => {
   try {
     if (response.status === 200) {
       setIsSignedUp(true);
+      navigate('/login');
     }
   } catch (error) {
     console.error("Signup failed:", error);

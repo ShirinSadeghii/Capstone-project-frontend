@@ -6,9 +6,24 @@
     @include tablet {
         padding: 2rem;
     }
+   
+    &__container {
+        margin-bottom: 2rem;
+        border-radius: 0.5rem;
+        padding: 1rem 0.8rem;
+        background-color: #ffffff6b;
+        display: flex;
+        justify-content: center;
+    }
 
     &__card {
         width: 70%;
+        @include tablet {
+            width: 40%;
+        }
+        @include desktop {
+            width: 20%;
+        }
     }
 
     &__title {
@@ -23,7 +38,7 @@
         font-style: italic;
         @include tablet {
             font-size: 17px;
-            margin-block-end: 1rem;
+            margin-block-end: 2rem;
         }
     }
 
@@ -55,5 +70,25 @@
     @include tablet {
         display: flex;
         width: 16rem;
+        margin-block-end: 1rem;
     }
+}
+
+.profile::before {
+    @include tablet {
+        background-image: linear-gradient(to right top, #df4560, #e54c7b, #e85796, #e664b1, #df73ca, #d17ed9, #c188e5, #b092ee, #9998ee, #849cea, #739fe3, #67a1da);
+        content: "";
+        display: block;
+        position: absolute;
+        top: 7rem;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-size: cover;
+        opacity: 0.5; 
+        z-index: -1;
+        height: 84rem;
+    }
+   
+
 }

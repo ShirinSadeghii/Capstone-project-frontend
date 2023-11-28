@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Twitter from '../../assets/icon-twitter.png';
 import Facebook from '../../assets/icon-facebook.png';
 import Instagram from '../../assets/icon-instagram.png';
+import Github from "../../assets/github-mark.svg";
 
 function Footer() {
     return (
@@ -59,6 +60,11 @@ function Footer() {
             </div>
             <div className="footer__tablet">
                 <span className="footer__tablet-copyright">©2023 THYNK TRAVEL |<br></br> Created By: Shirin </span>
+                 <a href="https://github.com/ShirinSadeghii">
+                    <img className="footer__tablet-icon" src={Github} alt="Github icon"></img>
+                </a>
+                
+                
             </div>
         </div>
     )

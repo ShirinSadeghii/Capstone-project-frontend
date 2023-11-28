@@ -63,6 +63,9 @@
     &__icons {
         width: 100%;
         display: flex;
+        @include desktop {
+            width: 80%;
+        }
     }
     &__icon {
         height: 20px;
@@ -150,11 +153,17 @@
                 font-weight: 600;
                 font-size: 10px;
                 line-height: 18px;
+                padding-bottom: 6px;
             }
             @include desktop {
                 font-size: 12px;
                 line-height: 24px;
             }
+        }
+
+        &-icon {
+            height: 1.25rem;
+            filter: invert(26%) sepia(60%) saturate(447%) hue-rotate(167deg) brightness(97%) contrast(87%);
         }
     }  
 }
