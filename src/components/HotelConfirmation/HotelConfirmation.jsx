@@ -22,6 +22,7 @@ function HotelConfirmation() {
                 <img className="confirm__logo" src={Luggage} alt="luggage icon"></img>
                 <span className="confirm__details">BOOKING DETAILS:</span>
                 <p className="confirm__details">Hotel: {hotelData?.name}</p>
+                <p className="confirm__details">City: {hotelData?.city}</p>
                 <p className="confirm__details">Nightly Rate: {hotelData?.price}</p>
             </div>
         </div>

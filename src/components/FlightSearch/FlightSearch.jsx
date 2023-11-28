@@ -94,7 +94,7 @@ useEffect(() => {
                                     
                                 </div>
                                 <div className="flight__item-container">
-                                    <span>$850</span>
+                                    <span className="flight__price">$850</span>
                                     <button className="flight__button" onClick={() => {
                                         openModal();
                                         }}>

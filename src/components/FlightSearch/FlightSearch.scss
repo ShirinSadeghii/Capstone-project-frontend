@@ -1,11 +1,19 @@
 @use "../../styles/partials/colors" as *;
+@use "../../styles/partials/mixins" as *;
 
 .flight {
     padding: 1rem .5rem;
     background-color: $Hero;
 
+    @include tablet {
+        padding: 1rem 2rem;
+    }
+
     &__title {
         font-size: 24px;
+        @include tablet {
+            font-size: 26px;
+        }
     }
 
     &__default-container {
@@ -27,6 +35,10 @@
         background-color: $White;
         border-radius: .5rem;
         padding: 1rem 0.8rem;
+
+        @include tablet {
+            padding: 1rem;
+        }
     }
 
     &__item {
@@ -58,33 +70,53 @@
     &-time {
         font-weight: 600;
         line-height: 20px;
+        @include tablet {
+            font-size: 18px;
+        }
     }
 
     &-subtitle {
         font-size: 13px;
         font-weight: 400;
+        @include tablet {
+            font-size: 14px;
+        }
     }
 
     &__current-deals {
         margin-block-start: 0;
         font-weight: 600;
+        @include tablet {
+            margin-block-end: 1.5rem;
+        }
+    }
+
+    &__price {
+        @include tablet {
+            font-size: 18px;
+        }
+    }
+
+    &__button {
+        background-color: $Button;
+        border: 2px solid $Button-Border;
+        color: $White;
+        font-weight: 600;
+        padding: 0.2rem 0.5rem;
+
+        @include tablet {
+            padding: 0.3rem 1rem;
+        }
+
+        &:hover {
+            background-color: #f5c7f7a3;
+            transition: all 0.2s ease-out;
+            border: 1px solid #cccccc;
+        }
     }
 }
 
-.flight__button {
-    background-color: $Button;
-    border: 2px solid $Button-Border;
-    color: $White;
-    font-weight: 600;
-    padding: 0.2rem 0.5rem;
 
-    &:hover {
-        background-color: #f5c7f7a3;
-        transition: all 0.2s ease-out;
-        border: 1px solid #cccccc;
-    }
-}
-  
 
 
 .item-button {

@@ -49,7 +49,7 @@ function PlannerCard() {
                     <div className="planner-card__daily">
                         <input className="planner-card__text" type="text" value={card.title} onChange={(e) => editTitle(index, e.target.value)} />
                         <button className='planner-card__add-btn' onClick={() => addItem(index)}>
-                          <img className='planner-card__img' src={Plus} alt='add icon'></img>
+                        <img className='planner-card__img' src={Plus} alt='add icon'></img>
                         </button>
                         {card.items.map((item, i) => (
                             <form key={i} className="form">

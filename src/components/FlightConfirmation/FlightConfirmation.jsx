@@ -20,7 +20,7 @@ function FlightConfirmation() {
             <p className="confirm__sub-text">Your booking is confirmed and the electronic ticket will be sent to your email shortly.</p>
             <div className="confirm__bottom-container">
                 <img className="confirm__logo" src={Plane} alt="plane"></img>
-                <span>DEPART:</span>
+                <span className="confirm__depart">DEPART:</span>
                 <p className="confirm__details">{flightData?.date} </p>
                 <p className="confirm__details">{flightData?.time}</p>
                 <p className="confirm__details">From: {flightData?.current_city} - To: {flightData?.destination_city}</p>

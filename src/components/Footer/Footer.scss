@@ -1,4 +1,5 @@
 @use "../../styles/partials/colors" as *;
+@use "../../styles/partials/mixins" as *;
 
 .footer {
     display: flex;
@@ -6,10 +7,18 @@
     padding: 1rem 1rem 0;
     background-color: $Footer;
 
+    @include tablet {
+        padding: 1rem 2rem;
+    }
+
     &__title {
         color: $White;
         font-weight: 700;
         padding-bottom: 10px;
+
+        @include tablet {
+            font-size: 18px;
+        }
     }
 
 
@@ -19,14 +28,26 @@
         flex-direction: column;
         justify-content: space-between;
         padding-bottom: 10px;
+
+        @include tablet {
+            width: 20%;
+        }
     }
 
     &__contact {
         width: 40%;
 
+        @include tablet {
+            width: 20%;
+        }
+
         &-container {
             padding: 10px 0;
             line-height: 18px;
+
+            @include tablet {
+                line-height: 22px;
+            }
         }
     }
     &__icons {
@@ -49,13 +70,67 @@
         justify-content: space-between;
         flex-direction: column;
         height: 35%;
+
+        @include tablet {
+            display: none;
+        }
         
         &-title {
             font-size: 12px;
             color: $White;
             font-weight: 700;
+
+            @include tablet {
+                display: none;
+            }
         }
     }
+    &__tablet {
+        display: none;
+        @include tablet {
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+        }
+
+        &-pages {
+            display: none;
+    
+            @include tablet {
+                display: flex;
+            }
+        }
+
+        &-title {
+            display: none;
+            @include tablet {
+                display: block;
+                font-size: 18px;
+                color: $White;
+                font-weight: 700;
+                padding-bottom: 10px;
+            }
+            
+        }
+
+        &-container {
+            @include tablet {
+                display: flex;
+                flex-direction: column;
+                padding: 10px 0;
+                line-height: 22px;
+            }
+        }
+
+        &-copyright {
+            @include tablet {
+                color: $White;
+                font-weight: 600;
+                font-size: 10px;
+                line-height: 18px;
+            }
+        }
+    }  
 }
 
 .contact__subtitle {
@@ -63,6 +138,11 @@
     display: block;
     font-weight: 600;
     color: $White;
+
+    @include tablet {
+        font-size: 14px;
+    }
+    
 }
 
 a {
@@ -70,5 +150,10 @@ a {
     text-decoration: none;
     color: $White;
     width: 80%;
+
+    @include tablet {
+        font-size: 13px;
+        font-weight: 600;
+    }
 
 }

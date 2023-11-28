@@ -1,4 +1,5 @@
 @use "../../styles/partials/colors" as *;
+@use "../../styles/partials/mixins" as *;
 
 .hero {
     background: url(../../assets//image/Bougainvillea-Greece-.jpg);
@@ -18,6 +19,10 @@
         margin-block-start: 0;
         color:$White;
         margin-block-end: 0.5rem;
+
+        @include tablet {
+            font-size: 44px;
+        }
     }
 
     &__subtitle {
@@ -25,5 +30,9 @@
         color: $White;
         font-weight: 600;
         font-style: italic;
+
+        @include tablet {
+            font-size: 18px;
+        }
     }
 }
