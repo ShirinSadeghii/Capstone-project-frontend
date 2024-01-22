@@ -9,6 +9,7 @@ In the project directory, you can run:
 ### `npm i, npm i axios, dotenv and sass`
 Installs all dependencies needed for this app to work properly.
 
+
 ### `npm start`
 
 Runs the app in the development mode.\
@@ -18,7 +19,7 @@ The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
 Once the app runs, the landing page will look like this:
-[screencapture-localhost-3000-2024-01-21-15_54_10.pdf](https://github.com/ShirinSadeghii/Capstone-project-frontend/files/14003272/screencapture-localhost-3000-2024-01-21-15_54_10.pdf)
+![Screen Shot 2024-01-21 at 4 06 35 PM](https://github.com/ShirinSadeghii/Capstone-project-frontend/assets/145378172/571af0eb-456c-42d7-a17a-8cf2c59f714b)
 
 
 
