@@ -22,6 +22,15 @@ Once the app runs, the landing page will look like this:
 
 ![Screen Shot 2024-01-21 at 4 06 35 PM](https://github.com/ShirinSadeghii/Capstone-project-frontend/assets/145378172/571af0eb-456c-42d7-a17a-8cf2c59f714b)
 
+The flights page will look like this:
+![Screen Shot 2024-01-21 at 4 08 41 PM](https://github.com/ShirinSadeghii/Capstone-project-frontend/assets/145378172/246416a0-8b51-4c0e-888a-c40b15dd4878)
+
+Once a user selects a destination and flight, they will be re-directed to the booking confirmation page:
+![Screen Shot 2024-01-21 at 4 09 58 PM](https://github.com/ShirinSadeghii/Capstone-project-frontend/assets/145378172/e62a1170-bfc9-4377-a771-7118a57c1d80)
+
+
+
+
 
 
 ### `npm test`
