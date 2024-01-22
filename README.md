@@ -18,7 +18,7 @@ The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
 Once the app runs, the landing page will look like this:
-![Screen Shot 2024-01-21 at 4 03 43 PM](https://github.com/ShirinSadeghii/Capstone-project-frontend/assets/145378172/8cb785de-2b58-45aa-ab96-aa3e4a54bdf2)
+[screencapture-localhost-3000-2024-01-21-15_54_10.pdf](https://github.com/ShirinSadeghii/Capstone-project-frontend/files/14003272/screencapture-localhost-3000-2024-01-21-15_54_10.pdf)
 
 
 
