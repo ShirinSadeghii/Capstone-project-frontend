@@ -18,17 +18,24 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-Once the app runs, the landing page will look like this:
+### Once the app runs, the landing page will look like this:
 
 ![Screen Shot 2024-01-21 at 4 06 35 PM](https://github.com/ShirinSadeghii/Capstone-project-frontend/assets/145378172/571af0eb-456c-42d7-a17a-8cf2c59f714b)
 
-The flights page will look like this:
+### The flights page will look like this:
 
 ![Screen Shot 2024-01-21 at 4 08 41 PM](https://github.com/ShirinSadeghii/Capstone-project-frontend/assets/145378172/246416a0-8b51-4c0e-888a-c40b15dd4878)
 
-Once a user selects a destination and flight, they will be re-directed to the booking confirmation page:
+### Once a user selects a destination and flight, they will be re-directed to the booking confirmation page:
 
 ![Screen Shot 2024-01-21 at 4 09 58 PM](https://github.com/ShirinSadeghii/Capstone-project-frontend/assets/145378172/e62a1170-bfc9-4377-a771-7118a57c1d80)
+
+### There is also a user authentication system where users can create a login profile, sign in and be re-directed to their profile:
+![Screen Shot 2024-01-21 at 4 13 59 PM](https://github.com/ShirinSadeghii/Capstone-project-frontend/assets/145378172/51c67ab2-987a-4cb1-8ba3-3d21be62f949)
+
+![Screen Shot 2024-01-21 at 4 14 18 PM](https://github.com/ShirinSadeghii/Capstone-project-frontend/assets/145378172/98116f13-68d4-44f9-a864-184112835f7f)
+
+
 
 
 
