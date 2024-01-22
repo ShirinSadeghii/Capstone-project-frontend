@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `npm i, npm i axios and dotenv`
+### `npm i, npm i axios, dotenv and sass`
 Installs all dependencies needed for this app to work properly.
 
 ### `npm start`
@@ -16,6 +16,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+
+Once the app runs, the landing page will look like this:
+[screencapture-localhost-3000-2024-01-21-15_54_10.pdf](https://github.com/ShirinSadeghii/Capstone-project-frontend/files/14003243/screencapture-localhost-3000-2024-01-21-15_54_10.pdf)
+
 
 ### `npm test`
 
