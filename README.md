@@ -1,101 +1,31 @@
+# Capstone Project Front-End Showcase #
+
 ## Images: ##
 <a href="//imgur.com/a/Rsltww3">Capstone Project Portfolio</a>
 
-# Getting Started with Create React App
+## Project Overview ##
+Embark on a journey to showcase my prowess in front-end development through creating a Capstone Project from scratch. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Tools & Resources ##
+create-react-app: Rapidly initializing a React starter project. sass npm package: Harnessing the power of SCSS for streamlined styling. npm: Seamless installation of JavaScript libraries.
 
-## Available Scripts
+## Front-End Only (API in Seperate Repo) ##
+### Dynamic Components ###
+Crafting dynamic components that render using live data, not hardcoded HTML. Made for seamless integration of hotel and flight data, itenerary/planner data, and user authentication.
+### Responsive Interaction ###
+Elevating user experience through clickable flights and hotels with pop up modals.
+### React###
+Leveraging React concepts to orchestrate a UI responding dynamically to user interactions.
+### Visual Design ###
+Achieving pixel-perfect responsiveness at and between breakpoints, utilizing a mobile first layout, a testament to my dedication to visual design precision.
+### State Management Mastery ###
+Mastering state management to seamlessly pass down data as props, enabling the generation of flight and hotel data based on user's search of destination city. 
+### SASS Elegance ###
+Embracing SASS for styling, unleashing the power of variables and other features to streamline and elevate the codebase.
+### Flexbox Layout ###
+Exercising Flexbox brilliance for layout control, ensuring a harmonious visual experience across the entire application.
 
-In the project directory, you can run:
-
-### `npm i, npm i axios, dotenv and sass`
-Installs all dependencies needed for this app to work properly.
-
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### Once the app runs, the landing page will look like this:
-
-![Screen Shot 2024-01-21 at 4 06 35 PM](https://github.com/ShirinSadeghii/Capstone-project-frontend/assets/145378172/571af0eb-456c-42d7-a17a-8cf2c59f714b)
-
-### The flights page will look like this:
-
-![Screen Shot 2024-01-21 at 4 08 41 PM](https://github.com/ShirinSadeghii/Capstone-project-frontend/assets/145378172/246416a0-8b51-4c0e-888a-c40b15dd4878)
-
-### Once a user selects a destination and flight, they will be re-directed to the booking confirmation page:
-
-![Screen Shot 2024-01-21 at 4 09 58 PM](https://github.com/ShirinSadeghii/Capstone-project-frontend/assets/145378172/e62a1170-bfc9-4377-a771-7118a57c1d80)
-
-### There is also a user authentication system where users can create a login profile, sign in and be re-directed to their profile:
-![Screen Shot 2024-01-21 at 4 13 59 PM](https://github.com/ShirinSadeghii/Capstone-project-frontend/assets/145378172/51c67ab2-987a-4cb1-8ba3-3d21be62f949)
-
-![Screen Shot 2024-01-21 at 4 14 18 PM](https://github.com/ShirinSadeghii/Capstone-project-frontend/assets/145378172/98116f13-68d4-44f9-a864-184112835f7f)
-
-
-
-
-
-
-
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## In the project directory, you can run: ##
+npm start
+Runs the app in the development mode.
+Open http://localhost:3000 to view it in your browser.
